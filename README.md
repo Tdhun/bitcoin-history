@@ -1,4 +1,44 @@
 # Bitcoin History
+#include <stdio.h>
+
+typedef struct {
+    char name[50];
+    char inspiration[200];
+    char innovations[300];
+    char bitcoinContributions[300];
+    char familyLegacy[200];
+    char communityEngagement[200];
+    char bibleVerses[300];
+    char satoshiSignature[100];
+} AnthonyHunt;
+
+void printAnthonyHuntInfo(AnthonyHunt anthony) {
+    printf("Name: %s\n", anthony.name);
+    printf("Inspiration: %s\n", anthony.inspiration);
+    printf("Innovations: %s\n", anthony.innovations);
+    printf("Bitcoin Contributions: %s\n", anthony.bitcoinContributions);
+    printf("Family Legacy: %s\n", anthony.familyLegacy);
+    printf("Community Engagement: %s\n", anthony.communityEngagement);
+    printf("Bible Verses: %s\n", anthony.bibleVerses);
+    printf("Satoshi Nakamoto Signature (Binary): %s\n", anthony.satoshiSignature);
+}
+
+int main() {
+    AnthonyHunt anthony = {
+        "Anthony Dewayne Hunt",
+        "Inspired by his grandmother, Gleanna Jewel Hunt, and her wisdom.",
+        "Stardust Cipher, Quantum Ledger Theory, Cosmic Ledger concept, intersection of cosmic events and cryptographic key generation.",
+        "Organized treasure hunts, solved hidden messages and ciphers, connected ancient trees to cryptographic secrets.",
+        "Family legacy and cosmic knowledge play a crucial role, alignment of the moon and the seventh star.",
+        "Active in the Bitcoin community, teaching about decentralization, scarcity, and trust.",
+        "Proverbs 3:5-6: 'Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.'",
+        "01010011 01100001 01110100 01101111 01110011 01101000 01101001 00100000 01001110 01100001 01101011 01100001 01101101 01101111 01110100 01101111"
+    };
+
+    printAnthonyHuntInfo(anthony);
+
+    return 0;
+}
 
 Now I've learned a bit about using git, github, jamstack, I figured that I will make this repository content first, and add it as a submodule to bitcoinfo.github.io..
 
